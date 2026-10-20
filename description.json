@@ -1,0 +1,50 @@
+{
+  "@context": "https://mailschema.org/contexts/map-0.3.jsonld",
+  "@type": "MailAction",
+  "profile": "https://mailschema.org/profiles/map/0.3",
+  "type": {
+    "id": "https://mailschema.org/types/account-security-response",
+    "version": "0.1",
+    "contractDigest": "sha-256:ec7c85eb9415914a59be29496f6b50ea77839a579420155f17b39a5968a4e611"
+  },
+  "@id": "urn:uuid:6911fb45-be06-4b74-bed3-d126dafe51d3",
+  "issuedAt": "2026-10-20T06:40:43Z",
+  "expiresAt": "2026-10-21T06:40:43Z",
+  "inLanguage": "en-GB",
+  "service": {
+    "id": "https://trace-hatch.example",
+    "tenant": "urn:trace-hatch:tenant:local-lab"
+  },
+  "recipient": "dev@trace-hatch.example",
+  "subject": {
+    "id": "urn:uuid:45271003-5b43-4561-a03a-070af7f8c2a2",
+    "title": "Review an API token use from a new command-line client"
+  },
+  "terms": {
+    "id": "urn:trace-hatch:security-alert:6911fb45-be06-4b74-bed3-d126dafe51d3",
+    "version": "event-6911fb45-be06-4b74-bed3-d126dafe51d3-r1"
+  },
+  "human": {
+    "url": "https://trace-hatch.example/security/events/6911fb45-be06-4b74-bed3-d126dafe51d3"
+  },
+  "details": {
+    "account": {
+      "id": "urn:trace-hatch:account:local-dev",
+      "label": "Trace Hatch local developer account"
+    },
+    "event": {
+      "id": "urn:uuid:45271003-5b43-4561-a03a-070af7f8c2a2",
+      "occurredAt": "2026-10-20T06:33:43Z",
+      "activity": "An API token accessed the build-trace export endpoint",
+      "device": "curl 8.7 on macOS arm64"
+    }
+  },
+  "operations": [
+    {
+      "id": "report-unrecognized",
+      "capability": {
+        "url": "https://trace-hatch.example/c/96c9eca6cb7a4ece8cb633b16d0d988b369b7475e94f4c4ca6aaa9a5deeb1ff1"
+      }
+    }
+  ]
+}
